@@ -15,6 +15,8 @@ public class Main {
         poxy.say();
 
 
+        poxy.hello();
+
     }
 
 }

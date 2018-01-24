@@ -5,4 +5,6 @@ package me.uniauto.invoke.dynamic.example;
  */
 public interface PersonDao {
     void say();
+
+    void hello();
 }

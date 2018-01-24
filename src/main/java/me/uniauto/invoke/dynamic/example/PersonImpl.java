@@ -10,4 +10,9 @@ public class PersonImpl implements PersonDao{
     public void say() {
         System.out.println("------人说话-------");
     }
+
+    @Override
+    public void hello() {
+        System.out.println("--------hello--");
+    }
 }

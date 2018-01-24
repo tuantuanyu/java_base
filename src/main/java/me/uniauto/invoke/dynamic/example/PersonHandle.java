@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
  */
 public class PersonHandle implements InvocationHandler{
     private Object obj;
+
     public PersonHandle(Object obj){
         this.obj = obj;
     }
@@ -16,8 +17,9 @@ public class PersonHandle implements InvocationHandler{
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("before");
-        Object result = method.invoke(obj,args);
+        Object result=null;
 
+        result= method.invoke(obj,args);
         System.out.println("after");
         return result;
     }
